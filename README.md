@@ -46,7 +46,6 @@ I wanted a single place to keep the exercises I worked through while learning Py
 
 - These files were written at different points during the learning process, so code style and conventions are not consistent across the archive — later files generally reflect more comfort with the language than earlier ones.
 - Some scripts depend on files in the `data/` folder (e.g. reading from a text file); those dependencies are kept alongside the scripts that use them.
-- Editor-generated temporary files (e.g. Code Runner's `tempCodeRunnerFile.py`) are intentionally excluded via `.gitignore`.
 
 ## License
 
