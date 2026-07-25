@@ -14,10 +14,10 @@ This archive draws from three main sources, plus a folder of self-directed pract
 
 | Source | Description | Folder |
 |---|---|---|
-| **Python Crash Course** by Eric Matthes | Exercises from the book, covering lists, dictionaries, conditionals, functions, classes, and more | [`01-python-crash-course/`](./01-python-crash-course) |
-| **Automate the Boring Stuff with Python** by Al Sweigart | Practical, project-based exercises focused on automation | [`02-automate-the-boring-stuff/`](./02-automate-the-boring-stuff) |
-| **30 Days of Python** (GitHub tutorial repository) | Daily practice scripts following a structured 30-day curriculum | [`03-30-days-of-python/`](./03-30-days-of-python) |
-| Self-directed practice | Exercises and mini-scripts written outside of any specific course, for extra reinforcement | [`04-general-practice/`](./04-general-practice) |
+| **Python Crash Course** by Eric Matthes | Exercises from the book, covering lists, dictionaries, conditionals, functions, classes, and more | [`01-python-crash-course/`](./python-crash-course/python-crash-course) |
+| **Automate the Boring Stuff with Python** by Al Sweigart | Practical, project-based exercises focused on automation | [`02-automate-the-boring-stuff/`](./automate-the-boring-stuff/automate-the-boring-stuff) |
+| **30 Days of Python** (GitHub tutorial repository) | Daily practice scripts following a structured 30-day curriculum | [`03-30-days-of-python/`](./30-days-of-python) |
+| Self-directed practice | Exercises and mini-scripts written outside of any specific course, for extra reinforcement | [`04-general-practice/`](./general-practice/) |
 
 ## Repository Structure
 
