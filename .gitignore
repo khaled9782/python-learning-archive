@@ -1,0 +1,11 @@
+# VS Code Code Runner temp files
+tempCodeRunnerFile.py
+tempCodeRunnerFile.python
+
+# Python cache
+__pycache__/
+*.pyc
+
+# OS files
+.DS_Store
+Thumbs.db
