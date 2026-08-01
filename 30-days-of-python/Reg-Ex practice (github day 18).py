@@ -29,7 +29,7 @@ Log entries on 2026-06-15:
 
 def most_frequent_word(string):
     pattern = re.compile(r"\b\w+\b", re.IGNORECASE)
-    all_words = pattern.findall(paragraph)
+    all_words = pattern.findall(string)
     word_count = {}
     for word in all_words:
         if word in word_count:
@@ -41,6 +41,27 @@ def most_frequent_word(string):
     return sorted_words
 
 
-print(most_frequent_word(paragraph))
+# print(most_frequent_word(paragraph))
 
 # Ex 2
+def particle_position():
+    text = "The position of some particles on the horizontal x-axis are -12, -4, -3 and -1 in the negative direction, 0 at origin, 4 and 8 in the positive direction."
+    pattern = re.compile(r"[-]?\d{1,2}")
+    str_numbers = pattern.findall(text)
+
+    numbers = [int(num) for num in str_numbers]
+    sorted_numbers = sorted(numbers, reverse=True)
+    distance = numbers[-1] - numbers[0]
+    return distance
+
+
+# print(particle_position())
+
+# Level 3
+# Ex 1
+sentence = '''
+%I $am@% a %tea@cher%, &and& I lo%#ve %tea@ching%;. There $is nothing; &as& mo@re rewarding as educa@ting &and& @emp%o@wering peo@ple. ;I found tea@ching m%o@re interesting tha@n any other %jo@bs. %Do@es thi%s mo@tivate yo@u to be a tea@cher!?
+'''
+cleaned_sentence = re.sub("[%$@&#;]", "", sentence)
+print(cleaned_sentence)
+print(most_frequent_word(cleaned_sentence))
