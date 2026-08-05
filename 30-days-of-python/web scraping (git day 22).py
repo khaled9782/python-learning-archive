@@ -4,18 +4,25 @@ from bs4 import BeautifulSoup
 base_url = "https://www.scrapethissite.com"
 url = requests.get("https://www.scrapethissite.com/pages/").text
 soup = BeautifulSoup(url, "lxml")
-# print  (soup.prettify)
 
-# soup.find_all ("div", class_="col-md-6 col-md-offset-3")
 for article in soup.find_all("div", class_="page"):
+    try:
+        heading = article.find("h3", class_="page-title").text.strip()
+        print(heading)
+    except AttributeError:
+        print("Heading not found")
 
-    heading = article.find("h3", class_="page-title").text.strip()
-    print(heading)
+    try:
+        summary = article.find("p", class_="lead session-desc").text.strip()
+        print(summary)
+    except AttributeError:
+        print("Summary not found")
 
-    summary = article.find("p", class_="lead session-desc").text.strip()
-    print(summary)
+    try:
+        link = article.a.get("href")
+        full_link = base_url + link
+        print(full_link)
+    except AttributeError:
+        print("Link not found")
 
-    link = article.a.get("href")
-    full_link = base_url + link
-    print(full_link)
     print()
